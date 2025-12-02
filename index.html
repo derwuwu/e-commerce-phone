@@ -19,6 +19,23 @@
         </nav>
     </header>
 
+    <div id="welcome-text"></div> 
+
+    <script>
+        const hours = new Date().getHours();
+        let message = "";
+
+        if (hours < 12) {
+            message = "Good Morning! Welcome to Very Easy PC!";
+        } else if (hours < 18) {
+            message = "Good Afternoon! Welcome to Very Easy PC!";
+        } else {
+            message = "Good Evening! Welcome to Very Easy PC!";
+        }
+
+        document.getElementById("welcome-text").innerText = message;
+    </script>
+
     <div class="items">
         
         <!-- CPU -->
