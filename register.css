@@ -22,11 +22,13 @@ body {
 /* NAVIGATION */
 .nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     padding: 15px 30px;
     background: rgba(0,0,0,0.7);
     backdrop-filter: blur(8px);
     box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    margin-bottom: 30px;
 }
 
 .nav .links {
