@@ -148,9 +148,45 @@ figure:hover .image-overlay {
     background: #ffdb66;
 }
 
-/* Mobile tweaks */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+
+    /* Reduce spacing between cards */
+    .items {
+        gap: 15px;
+        padding: 0 10px;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    }
+
+    /* Smaller card padding for cleaner phone layout */
+    figure {
+        padding: 12px;
+        margin: 10px 5px;
+        border-radius: 12px;
+    }
+
+    /* Prevent image from being too tall */
     figure img {
-        height: 180px;
+        height: 160px;
+    }
+
+    /* Smaller overlay text */
+    .image-overlay h3 {
+        font-size: 1.1rem;
+    }
+
+    .image-overlay .price {
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+
+    .image-overlay button {
+        font-size: 0.9rem;
+        padding: 8px 14px;
+    }
+
+    /* Caption adjusts */
+    figcaption {
+        font-size: 0.9rem;
+        transform: translateY(8px);
     }
 }
