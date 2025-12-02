@@ -149,6 +149,16 @@ figure:hover .image-overlay {
 
 @media (max-width: 600px) {
 
+    .nav .links {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .nav .links li a {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
     /* Reduce spacing between cards */
     .items {
         gap: 15px;
