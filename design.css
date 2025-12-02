@@ -46,6 +46,27 @@ body {
     color: black;
 }
 
+/* welkams */
+#welcome-text {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin: 15px auto 25px;
+    color: #ffda6a;
+    text-shadow: 0 0 8px rgba(0,0,0,0.7);
+    letter-spacing: 1px;
+    animation: fadeIn 1.2s ease, glowPulse 3s infinite alternate ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glowPulse {
+    from { text-shadow: 0 0 6px rgba(255, 218, 106, 0.3); }
+    to { text-shadow: 0 0 16px rgba(255, 218, 106, 0.7); }
+}
+
 /* Responsive product grid */
 .items {
     display: grid;
@@ -92,7 +113,7 @@ figcaption {
     font-size: 1rem;
     color: #f5f5f5;
     font-weight: bold;
-    transform: translateY(12px); /* sabay sa */
+    transform: translateY(12px); /* sabay sa angat */
 }
 
 
