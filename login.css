@@ -52,7 +52,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 70px); /* full height minus nav */
+    min-height: calc(100vh - 500px); /* full height minus nav */
     padding: 20px;
 }
 
@@ -184,3 +184,4 @@ body {
         font-size: 14px;
     }
 }
+
